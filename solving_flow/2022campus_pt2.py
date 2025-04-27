@@ -16,6 +16,7 @@ sensor_2_var = df['sensor_2'].var()
 # 对sensor_1，sensor_2 特征进行Z-score标准化，
 data = df[['sensor_1', 'sensor_2']]
 data_zscore = (data - data.mean()) / data.std()
+
 print(data_zscore.head())
 print(data_zscore.mean())
 # 输出标准化之后的sensor_1，sensor_2 的均值和方差。
